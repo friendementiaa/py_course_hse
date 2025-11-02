@@ -14,7 +14,7 @@
 
 ```
 py_course_hse/
-├── [homework/](homework/) # Домашние задания
-├── [classwork/](classwork/) # Аудиторные работы
+- [homework/] - Домашние задания
+- [classwork/] - Аудиторные работы
 
 ```
