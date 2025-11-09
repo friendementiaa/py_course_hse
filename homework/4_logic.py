@@ -48,7 +48,7 @@ print('--------ЗАДАЧА №2--------')
 
 text = "Привет! Как дела?"
 banned_words = ["мат", "оскорбление", "спам", "реклама"]
-
+text_lower = text.lower()
 # ЗАДАНИЕ: Соберите финальную проверку
 # Текст валиден если:
 # - длина от 1 до 1000 символов
@@ -56,7 +56,7 @@ banned_words = ["мат", "оскорбление", "спам", "реклама"
 # - И НЕ состоит только из английских символов
 
 # Проверки (проверка мата и англоязычного текста написана, нужно реализовать логику)
-contains_banned_words = any(word in text for word in banned_words)
+contains_banned_words = any(word in text_lower for word in banned_words)
 is_english_only = all(ord(c) < 128 for c in text if c != ' ')
 if 1 <= len(text) <= 1000 and not is_english_only and not contains_banned_words:
     print('Текст валиден')
